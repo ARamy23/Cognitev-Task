@@ -3,12 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A75A051BD45B9217657B105E /* Pods_Cognitev_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F1ADC1CBDE34997634A490 /* Pods_Cognitev_Task.framework */; };
 		A87341C16C6121B98E50CDB0 /* libPods-Cognitev-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCF99AC63C50D7843C6712D /* libPods-Cognitev-TaskTests.a */; };
+		B8071E44238E9DB0007559A8 /* ExternalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E43238E9DB0007559A8 /* ExternalProtocols.swift */; };
+		B8071E47238E9DF2007559A8 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E46238E9DF2007559A8 /* Storyboard.swift */; };
+		B8071E4D238E9E83007559A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E4C238E9E83007559A8 /* Router.swift */; };
+		B8071E4F238E9EDA007559A8 /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E4E238E9EDA007559A8 /* MoyaManager.swift */; };
+		B8071E52238E9FA7007559A8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E51238E9FA7007559A8 /* Reachability.swift */; };
+		B8071E54238E9FD9007559A8 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E53238E9FD9007559A8 /* BaseService.swift */; };
+		B8071E56238EA0B5007559A8 /* AppleLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E55238EA0B5007559A8 /* AppleLocationManager.swift */; };
+		B8071E58238EA532007559A8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E57238EA532007559A8 /* UserDefaultsManager.swift */; };
+		B8071E5B238EA5CE007559A8 /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E5A238EA5CE007559A8 /* BaseValidator.swift */; };
+		B8071E5D238EA5E8007559A8 /* ReachabilityValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E5C238EA5E8007559A8 /* ReachabilityValidator.swift */; };
+		B8071E5F238EA614007559A8 /* ValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E5E238EA614007559A8 /* ValidatorError.swift */; };
+		B8071E61238EA652007559A8 /* Codable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E60238EA652007559A8 /* Codable+Helpers.swift */; };
 		B8904879238E889A0041F509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8904878238E889A0041F509 /* AppDelegate.swift */; };
 		B890487D238E889A0041F509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890487C238E889A0041F509 /* ViewController.swift */; };
 		B8904880238E889A0041F509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B890487E238E889A0041F509 /* Main.storyboard */; };
@@ -45,6 +57,18 @@
 		784DBA39C3F3E929E4C825C9 /* Pods-Cognitev-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskTests/Pods-Cognitev-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		8CCF99AC63C50D7843C6712D /* libPods-Cognitev-TaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognitev-TaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F1ADC1CBDE34997634A490 /* Pods_Cognitev_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognitev_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8071E43238E9DB0007559A8 /* ExternalProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalProtocols.swift; sourceTree = "<group>"; };
+		B8071E46238E9DF2007559A8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		B8071E4C238E9E83007559A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B8071E4E238E9EDA007559A8 /* MoyaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
+		B8071E51238E9FA7007559A8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B8071E53238E9FD9007559A8 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		B8071E55238EA0B5007559A8 /* AppleLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLocationManager.swift; sourceTree = "<group>"; };
+		B8071E57238EA532007559A8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		B8071E5A238EA5CE007559A8 /* BaseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
+		B8071E5C238EA5E8007559A8 /* ReachabilityValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityValidator.swift; sourceTree = "<group>"; };
+		B8071E5E238EA614007559A8 /* ValidatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorError.swift; sourceTree = "<group>"; };
+		B8071E60238EA652007559A8 /* Codable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helpers.swift"; sourceTree = "<group>"; };
 		B8904875238E889A0041F509 /* Cognitev-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cognitev-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8904878238E889A0041F509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B890487C238E889A0041F509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +133,105 @@
 				D4D3857502C849167CF3EB92 /* Pods-Cognitev-TaskUITests.debug.xcconfig */,
 				28FF10DA589AFDAD13F5AE6C /* Pods-Cognitev-TaskUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8071E40238E9D0F007559A8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E59238EA5B4007559A8 /* Validator */,
+				B8071E50238E9F94007559A8 /* Networking */,
+				B8071E45238E9DD5007559A8 /* Helpers */,
+				B8071E42238E9D63007559A8 /* Externals */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B8071E41238E9D1B007559A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B8071E42238E9D63007559A8 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E4B238E9E38007559A8 /* Location */,
+				B8071E4A238E9E34007559A8 /* Network */,
+				B8071E49238E9E30007559A8 /* Cache */,
+				B8071E48238E9E29007559A8 /* Router */,
+				B8071E43238E9DB0007559A8 /* ExternalProtocols.swift */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		B8071E45238E9DD5007559A8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E46238E9DF2007559A8 /* Storyboard.swift */,
+				B8071E60238EA652007559A8 /* Codable+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B8071E48238E9E29007559A8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E4C238E9E83007559A8 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B8071E49238E9E30007559A8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E57238EA532007559A8 /* UserDefaultsManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		B8071E4A238E9E34007559A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E4E238E9EDA007559A8 /* MoyaManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B8071E4B238E9E38007559A8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E55238EA0B5007559A8 /* AppleLocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		B8071E50238E9F94007559A8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E51238E9FA7007559A8 /* Reachability.swift */,
+				B8071E53238E9FD9007559A8 /* BaseService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B8071E59238EA5B4007559A8 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E5A238EA5CE007559A8 /* BaseValidator.swift */,
+				B8071E5C238EA5E8007559A8 /* ReachabilityValidator.swift */,
+				B8071E5E238EA614007559A8 /* ValidatorError.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		B8071E62238EA6E1007559A8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E63238EA6F0007559A8 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		B890486C238E889A0041F509 = {
@@ -138,6 +259,8 @@
 		B8904877238E889A0041F509 /* Cognitev-Task */ = {
 			isa = PBXGroup;
 			children = (
+				B8071E41238E9D1B007559A8 /* Scenes */,
+				B8071E40238E9D0F007559A8 /* Shared */,
 				B8904878238E889A0041F509 /* AppDelegate.swift */,
 				B890487C238E889A0041F509 /* ViewController.swift */,
 				B890487E238E889A0041F509 /* Main.storyboard */,
@@ -405,8 +528,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8071E54238E9FD9007559A8 /* BaseService.swift in Sources */,
+				B8071E5D238EA5E8007559A8 /* ReachabilityValidator.swift in Sources */,
+				B8071E52238E9FA7007559A8 /* Reachability.swift in Sources */,
+				B8071E47238E9DF2007559A8 /* Storyboard.swift in Sources */,
 				B890487D238E889A0041F509 /* ViewController.swift in Sources */,
+				B8071E56238EA0B5007559A8 /* AppleLocationManager.swift in Sources */,
+				B8071E5B238EA5CE007559A8 /* BaseValidator.swift in Sources */,
+				B8071E4D238E9E83007559A8 /* Router.swift in Sources */,
+				B8071E61238EA652007559A8 /* Codable+Helpers.swift in Sources */,
+				B8071E58238EA532007559A8 /* UserDefaultsManager.swift in Sources */,
+				B8071E44238E9DB0007559A8 /* ExternalProtocols.swift in Sources */,
+				B8071E5F238EA614007559A8 /* ValidatorError.swift in Sources */,
 				B8904879238E889A0041F509 /* AppDelegate.swift in Sources */,
+				B8071E4F238E9EDA007559A8 /* MoyaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

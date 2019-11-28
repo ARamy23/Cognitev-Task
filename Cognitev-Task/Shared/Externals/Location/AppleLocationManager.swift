@@ -7,15 +7,27 @@
 //
 
 import Foundation
-import RxSwift
+import SwiftLocation
+import CoreLocation
 
 class AppleLocationManager: LocationProtocol {
-    func startTracking() {
-        
+    private var request: LocationRequest?
+    
+    var onFailure: ((Error) -> Void)?
+    
+    func startTracking(_ onUpdate: @escaping ((CLLocation) -> Void)) {
+        request?.stop()
+        request = Locator.subscribePosition(accuracy: .neighborhood, onUpdate: onUpdate, onFail: { [weak self] (error, location) -> (Void) in
+            self?.onFailure?(error)
+        })
     }
     
-    func getCurrentLocation() -> Observable<(long: Double, lat: Double)> {
-        return Observable.just((long: 30, lat: 30))
+    func fetchLocationOneShot(_ onComplete: @escaping ((CLLocation) -> Void)) {
+        request?.stop()
+        request = Locator.currentPosition(accuracy: .neighborhood, onSuccess: onComplete, onFail: { [weak self] (error, location) -> (Void) in
+            self?.onFailure?(error)
+        })
     }
+    
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftMessages
+import PKHUD
 
 class Router: RouterProtocol {
     
@@ -21,9 +22,13 @@ class Router: RouterProtocol {
         presentedView.navigationController?.pushViewController(view, animated: true)
     }
     
-    func startActivityIndicator() { }
+    func startActivityIndicator() {
+        HUD.show(.systemActivity)
+    }
     
-    func stopActivityIndicator() { }
+    func stopActivityIndicator() {
+        HUD.hide(animated: true)
+    }
     
     func dismiss() {
         presentedView.dismiss(animated: true, completion: nil)
@@ -60,7 +65,7 @@ class Router: RouterProtocol {
     func toast(title: String, message: String) {
         let view = MessageView.viewFromNib(layout: .messageView)
         view.configureTheme(.info)
-        view.configureContent(title: title, body: message, iconImage: #imageLiteral(resourceName: "ic_alert_dark"))
+        view.configureContent(title: title, body: message, iconImage: #imageLiteral(resourceName: "cross"))
         view.configureDropShadow()
         view.button?.isHidden = true
         

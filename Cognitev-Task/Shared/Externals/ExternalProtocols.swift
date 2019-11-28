@@ -9,10 +9,12 @@
 import UIKit
 import Moya
 import RxSwift
+import CoreLocation
 
 protocol LocationProtocol {
-    func startTracking()
-    func getCurrentLocation() -> Observable<(long: Double, lat: Double)>
+    var onFailure: ((Error) -> Void)? { get set }
+    func startTracking(_ onUpdate: @escaping (CLLocation) -> Void)
+    func fetchLocationOneShot(_ onComplete: @escaping (CLLocation) -> Void)
 }
 
 protocol CacheProtocol {

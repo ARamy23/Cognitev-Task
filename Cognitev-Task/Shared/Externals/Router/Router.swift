@@ -64,8 +64,8 @@ class Router: RouterProtocol {
     
     func toast(title: String, message: String) {
         let view = MessageView.viewFromNib(layout: .messageView)
-        view.configureTheme(.info)
-        view.configureContent(title: title, body: message, iconImage: #imageLiteral(resourceName: "cross"))
+        view.configureTheme(.error)
+        view.configureContent(title: title, body: message)
         view.configureDropShadow()
         view.button?.isHidden = true
         

@@ -12,6 +12,7 @@ import RxSwift
 
 class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var feedUpdateStyleButton: UIBarButtonItem!
     
     private var viewModel: HomeViewModel!
     private var location: LocationProtocol = AppleLocationManager()
@@ -27,6 +28,27 @@ class HomeViewController: BaseViewController {
     
     override func bind() {
         viewModel = HomeViewModel(location: location, cache: cache, router: router, network: network)
+        
+        self.viewModel.fetchStyle.subscribe(onNext: { (fetchStyle) in
+            let currentFetchingStyle = self.viewModel.fetchStyle.value
+            switch currentFetchingStyle {
+            case .oneShot:
+                self.feedUpdateStyleButton.title = "Single Update"
+            case .realtime:
+                self.feedUpdateStyleButton.title = "Real-Time"
+            }
+        }).disposed(by: disposeBag)
+        
+        feedUpdateStyleButton.rx.tap.subscribe(onNext: { [weak self] (_) in
+            guard let self = self else { return }
+            let currentFetchingStyle = self.viewModel.fetchStyle.value
+            switch currentFetchingStyle {
+            case .realtime:
+                self.viewModel.fetchStyle.accept(.oneShot)
+            case .oneShot:
+                self.viewModel.fetchStyle.accept(.realtime)
+            }
+        }).disposed(by: disposeBag)
         
         viewModel.venues.bind(to: tableView.rx.items(cellIdentifier: "\(VenueTableViewCell.self)", cellType: VenueTableViewCell.self)) { row, model, cell in
             cell.set(model: model)

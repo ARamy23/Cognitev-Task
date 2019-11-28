@@ -34,6 +34,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Real-Time" style="plain" id="ioP-cm-Mkg"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="feedUpdateStyleButton" destination="ioP-cm-Mkg" id="qzP-RT-UGA"/>
                         <outlet property="tableView" destination="O21-Pn-HYz" id="8gO-Vq-h5Q"/>
                     </connections>
                 </viewController>

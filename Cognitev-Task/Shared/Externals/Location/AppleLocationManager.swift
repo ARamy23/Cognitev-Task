@@ -17,14 +17,18 @@ class AppleLocationManager: LocationProtocol {
     
     func startTracking(_ onUpdate: @escaping ((CLLocation) -> Void)) {
         request?.stop()
-        request = Locator.subscribePosition(accuracy: .neighborhood, onUpdate: onUpdate, onFail: { [weak self] (error, location) -> (Void) in
+        request = Locator.subscribePosition(accuracy: .neighborhood, onUpdate: { (location) -> (Void) in
+            onUpdate(location)
+        }, onFail: { [weak self] (error, _) -> (Void) in
             self?.onFailure?(error)
         })
     }
     
     func fetchLocationOneShot(_ onComplete: @escaping ((CLLocation) -> Void)) {
         request?.stop()
-        request = Locator.currentPosition(accuracy: .neighborhood, onSuccess: onComplete, onFail: { [weak self] (error, location) -> (Void) in
+        request = Locator.currentPosition(accuracy: .neighborhood, onSuccess: { (location) -> (Void) in
+            onComplete(location)
+        }, onFail: { [weak self] (error, _) -> (Void) in
             self?.onFailure?(error)
         })
     }

@@ -29,6 +29,7 @@
 		B8071E88238EFC29007559A8 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E87238EFC29007559A8 /* BaseInteractor.swift */; };
 		B8071E8A238EFDB4007559A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E89238EFDB4007559A8 /* HomeViewModel.swift */; };
 		B8397A3795BA0F15C6F75382 /* libPods-Cognitev-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681A93E07838C22598673A0E /* libPods-Cognitev-TaskTests.a */; };
+		B85FA1DA2391BEF500248674 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FA1D92391BEF500248674 /* UITableView+Extensions.swift */; };
 		B86BB338238F013B002F3C5C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB337238F013A002F3C5C /* KeychainManager.swift */; };
 		B86BB33B238F02E3002F3C5C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB33A238F02E3002F3C5C /* Keys.swift */; };
 		B86BB33D238F05AF002F3C5C /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB33C238F05AF002F3C5C /* RecommendationService.swift */; };
@@ -89,6 +90,7 @@
 		B8071E85238EFBF1007559A8 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B8071E87238EFC29007559A8 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		B8071E89238EFDB4007559A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B85FA1D92391BEF500248674 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		B86BB337238F013A002F3C5C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		B86BB33A238F02E3002F3C5C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B86BB33C238F05AF002F3C5C /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				B8071E46238E9DF2007559A8 /* Storyboard.swift */,
 				B8071E60238EA652007559A8 /* Codable+Helpers.swift */,
+				B85FA1D92391BEF500248674 /* UITableView+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				B801888A238F21440045619E /* VenueTableViewCell.swift in Sources */,
 				B8071E44238E9DB0007559A8 /* ExternalProtocols.swift in Sources */,
 				B8071E5F238EA614007559A8 /* ValidatorError.swift in Sources */,
+				B85FA1DA2391BEF500248674 /* UITableView+Extensions.swift in Sources */,
 				B8071E84238EFB1F007559A8 /* BaseViewController.swift in Sources */,
 				B8904879238E889A0041F509 /* AppDelegate.swift in Sources */,
 				B8071E4F238E9EDA007559A8 /* MoyaManager.swift in Sources */,

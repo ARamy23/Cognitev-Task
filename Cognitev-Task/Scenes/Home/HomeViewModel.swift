@@ -9,6 +9,7 @@
 import RxSwift
 import RxCocoa
 import CoreLocation
+import SwifterSwift
 
 enum ExploreFeedFetchingStyle {
     case realtime
@@ -42,9 +43,11 @@ final class HomeViewModel: BaseViewModel {
             guard let self = self else { return }
             self.router.stopActivityIndicator()
             let items = response.response?.groups?.map { $0.items ?? [] } ?? [[]]
-            let flattend = items.flatMap { $0 }
-            let oldVenues = self.venues.value
-            self.venues.accept(oldVenues + flattend)
+            var flattend = items.flatMap { $0 }
+            var oldVenues = self.venues.value
+            var newPatch = (oldVenues + flattend)
+            newPatch.removeDuplicates()
+            self.venues.accept(newPatch)
             self.cache.saveObject(oldVenues + flattend, key: "\(location.coordinate.longitude), \(location.coordinate.latitude) page: \(self.page)")
             }, onError: { [weak self] (error) in
                 guard let self = self else { return }

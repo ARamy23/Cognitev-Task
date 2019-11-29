@@ -16,10 +16,24 @@ class HomeViewController: BaseViewController {
     
     private var viewModel: HomeViewModel!
     private var location: LocationProtocol = AppleLocationManager()
+    private lazy var pullToRefresh: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull To Refresh")
+        return refreshControl
+    }()
     
     override func viewDidLoad() {
-        tableView.register(nibWithCellClass: VenueTableViewCell.self)
+        setupUI()
         super.viewDidLoad()
+    }
+    
+    private func setupUI() {
+        tableView.register(nibWithCellClass: VenueTableViewCell.self)
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = pullToRefresh
+        } else {
+            tableView.addSubview(pullToRefresh)
+        }
     }
     
     override func initialize() {
@@ -29,7 +43,14 @@ class HomeViewController: BaseViewController {
     override func bind() {
         viewModel = HomeViewModel(location: location, cache: cache, router: router, network: network)
         
-        self.viewModel.fetchStyle.subscribe(onNext: { (fetchStyle) in
+        self.pullToRefresh.rx.controlEvent(.valueChanged).subscribe(onNext: { [weak self] (_) in
+            guard let self = self else { return }
+            self.viewModel.fetchStyle.accept(.oneShot)
+            self.viewModel.fetchExploreFeed()
+        }).disposed(by: disposeBag)
+        
+        self.viewModel.fetchStyle.subscribe(onNext: { [weak self] (fetchStyle) in
+            guard let self = self else { return }
             let currentFetchingStyle = self.viewModel.fetchStyle.value
             switch currentFetchingStyle {
             case .oneShot:
@@ -53,6 +74,16 @@ class HomeViewController: BaseViewController {
         viewModel.venues.bind(to: tableView.rx.items(cellIdentifier: "\(VenueTableViewCell.self)", cellType: VenueTableViewCell.self)) { row, model, cell in
             cell.set(model: model)
         }.disposed(by: disposeBag)
+        
+        viewModel.venues.subscribe(onNext: { [weak self] (items) in
+            guard let self = self else { return }
+            self.pullToRefresh.endRefreshing()
+            if items.isEmpty {
+                self.tableView.setEmptyMessage("No Data found!")
+            } else {
+                self.tableView.restore()
+            }
+        }).disposed(by: disposeBag)
         
         tableView.rx.contentOffset.subscribe(onNext: { [weak self] (contentOffset) in
             guard let self = self else { return }

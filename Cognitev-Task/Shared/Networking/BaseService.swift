@@ -12,7 +12,7 @@ protocol BaseService: TargetType { }
 
 extension BaseService {
     var baseURL: URL {
-        return URL(string: "https://api.themoviedb.org/3")!
+        return URL(string: "https://api.foursquare.com/v2/")!
     }
     
     var headers: [String: String]? {
@@ -25,6 +25,8 @@ extension BaseService {
     }
     
     func getDefaultParamters() -> [String: Any] {
-        return ["api_key": Constants.apiKey]
+        return ["client_id": String.clientID,
+                "client_secret": String.clientSecret,
+                "v": 20191101] // v represents version of api where the value is date in format of YYYYMMDD
     }
 }

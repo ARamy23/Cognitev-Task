@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A75A051BD45B9217657B105E /* Pods_Cognitev_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F1ADC1CBDE34997634A490 /* Pods_Cognitev_Task.framework */; };
-		A87341C16C6121B98E50CDB0 /* libPods-Cognitev-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCF99AC63C50D7843C6712D /* libPods-Cognitev-TaskTests.a */; };
+		31CD7E97313BF2C97E516E1B /* Pods_Cognitev_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD985F0B78508AABB6E5BB /* Pods_Cognitev_Task.framework */; };
+		3254330DB709305D72C31391 /* libPods-Cognitev-TaskUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A8A78DC414F8F29914DB0D /* libPods-Cognitev-TaskUITests.a */; };
+		B801888A238F21440045619E /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8018888238F21440045619E /* VenueTableViewCell.swift */; };
+		B801888B238F21440045619E /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8018889238F21440045619E /* VenueTableViewCell.xib */; };
 		B8071E44238E9DB0007559A8 /* ExternalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E43238E9DB0007559A8 /* ExternalProtocols.swift */; };
 		B8071E47238E9DF2007559A8 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E46238E9DF2007559A8 /* Storyboard.swift */; };
 		B8071E4D238E9E83007559A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E4C238E9E83007559A8 /* Router.swift */; };
@@ -21,14 +23,28 @@
 		B8071E5D238EA5E8007559A8 /* ReachabilityValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E5C238EA5E8007559A8 /* ReachabilityValidator.swift */; };
 		B8071E5F238EA614007559A8 /* ValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E5E238EA614007559A8 /* ValidatorError.swift */; };
 		B8071E61238EA652007559A8 /* Codable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E60238EA652007559A8 /* Codable+Helpers.swift */; };
+		B8071E64238EA6F0007559A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E63238EA6F0007559A8 /* HomeViewController.swift */; };
+		B8071E84238EFB1F007559A8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E83238EFB1F007559A8 /* BaseViewController.swift */; };
+		B8071E86238EFBF1007559A8 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E85238EFBF1007559A8 /* BaseViewModel.swift */; };
+		B8071E88238EFC29007559A8 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E87238EFC29007559A8 /* BaseInteractor.swift */; };
+		B8071E8A238EFDB4007559A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8071E89238EFDB4007559A8 /* HomeViewModel.swift */; };
+		B8397A3795BA0F15C6F75382 /* libPods-Cognitev-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681A93E07838C22598673A0E /* libPods-Cognitev-TaskTests.a */; };
+		B86BB338238F013B002F3C5C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB337238F013A002F3C5C /* KeychainManager.swift */; };
+		B86BB33B238F02E3002F3C5C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB33A238F02E3002F3C5C /* Keys.swift */; };
+		B86BB33D238F05AF002F3C5C /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB33C238F05AF002F3C5C /* RecommendationService.swift */; };
+		B86BB340238F08F0002F3C5C /* ExploreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB33F238F08F0002F3C5C /* ExploreResponse.swift */; };
+		B86BB342238F09D6002F3C5C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BB341238F09D6002F3C5C /* HomeInteractor.swift */; };
 		B8904879238E889A0041F509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8904878238E889A0041F509 /* AppDelegate.swift */; };
-		B890487D238E889A0041F509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890487C238E889A0041F509 /* ViewController.swift */; };
 		B8904880238E889A0041F509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B890487E238E889A0041F509 /* Main.storyboard */; };
 		B8904882238E889C0041F509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8904881238E889B0041F509 /* Assets.xcassets */; };
 		B8904885238E889C0041F509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8904883238E889C0041F509 /* LaunchScreen.storyboard */; };
-		B8904890238E889C0041F509 /* Cognitev_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890488F238E889C0041F509 /* Cognitev_TaskTests.swift */; };
 		B890489B238E889C0041F509 /* Cognitev_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890489A238E889C0041F509 /* Cognitev_TaskUITests.swift */; };
-		BA24DD23F2E4464577F14BCC /* libPods-Cognitev-TaskUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 633EBF86A4F1C411C8E1AF5D /* libPods-Cognitev-TaskUITests.a */; };
+		B8905A7123907DC6004443B4 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7023907DC6004443B4 /* RouterMock.swift */; };
+		B8905A7323907DCF004443B4 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7223907DCF004443B4 /* NetworkMock.swift */; };
+		B8905A7523907DD7004443B4 /* CacheMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7423907DD7004443B4 /* CacheMock.swift */; };
+		B8905A7723907DE3004443B4 /* LocationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7623907DE3004443B4 /* LocationMock.swift */; };
+		B8905A7A23907FFF004443B4 /* BaseSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7923907FFF004443B4 /* BaseSceneTests.swift */; };
+		B8905A7D239080DC004443B4 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8905A7C239080DC004443B4 /* HomeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,14 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22A879CE7336289CE91E9A9E /* Pods-Cognitev-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskTests/Pods-Cognitev-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		28FF10DA589AFDAD13F5AE6C /* Pods-Cognitev-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskUITests/Pods-Cognitev-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2CD37EA07AB893A411AC40B1 /* Pods-Cognitev-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-Task.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task.release.xcconfig"; sourceTree = "<group>"; };
-		4BAF9A8BE399D31F42FF763C /* Pods-Cognitev-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-Task.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task.debug.xcconfig"; sourceTree = "<group>"; };
-		633EBF86A4F1C411C8E1AF5D /* libPods-Cognitev-TaskUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognitev-TaskUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		784DBA39C3F3E929E4C825C9 /* Pods-Cognitev-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskTests/Pods-Cognitev-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
-		8CCF99AC63C50D7843C6712D /* libPods-Cognitev-TaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognitev-TaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4F1ADC1CBDE34997634A490 /* Pods_Cognitev_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognitev_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FF6D45C52788432D903C4C /* Pods-Cognitev-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskUITests/Pods-Cognitev-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67AD985F0B78508AABB6E5BB /* Pods_Cognitev_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognitev_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681A93E07838C22598673A0E /* libPods-Cognitev-TaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognitev-TaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE4601CC53D524D4B710B0B /* Pods-Cognitev-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskUITests/Pods-Cognitev-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F2F47B1B8FE0FF7368AAC4C /* Pods-Cognitev-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskTests/Pods-Cognitev-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8018888238F21440045619E /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		B8018889238F21440045619E /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
 		B8071E43238E9DB0007559A8 /* ExternalProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalProtocols.swift; sourceTree = "<group>"; };
 		B8071E46238E9DF2007559A8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		B8071E4C238E9E83007559A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -69,20 +84,37 @@
 		B8071E5C238EA5E8007559A8 /* ReachabilityValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityValidator.swift; sourceTree = "<group>"; };
 		B8071E5E238EA614007559A8 /* ValidatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorError.swift; sourceTree = "<group>"; };
 		B8071E60238EA652007559A8 /* Codable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helpers.swift"; sourceTree = "<group>"; };
+		B8071E63238EA6F0007559A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B8071E83238EFB1F007559A8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B8071E85238EFBF1007559A8 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B8071E87238EFC29007559A8 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		B8071E89238EFDB4007559A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B86BB337238F013A002F3C5C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		B86BB33A238F02E3002F3C5C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B86BB33C238F05AF002F3C5C /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		B86BB33F238F08F0002F3C5C /* ExploreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreResponse.swift; sourceTree = "<group>"; };
+		B86BB341238F09D6002F3C5C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		B8904875238E889A0041F509 /* Cognitev-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cognitev-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8904878238E889A0041F509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B890487C238E889A0041F509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B890487F238E889A0041F509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8904881238E889B0041F509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8904884238E889C0041F509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8904886238E889C0041F509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B890488B238E889C0041F509 /* Cognitev-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognitev-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B890488F238E889C0041F509 /* Cognitev_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognitev_TaskTests.swift; sourceTree = "<group>"; };
 		B8904891238E889C0041F509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8904896238E889C0041F509 /* Cognitev-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognitev-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B890489A238E889C0041F509 /* Cognitev_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognitev_TaskUITests.swift; sourceTree = "<group>"; };
 		B890489C238E889C0041F509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4D3857502C849167CF3EB92 /* Pods-Cognitev-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskUITests/Pods-Cognitev-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8905A7023907DC6004443B4 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		B8905A7223907DCF004443B4 /* NetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		B8905A7423907DD7004443B4 /* CacheMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheMock.swift; sourceTree = "<group>"; };
+		B8905A7623907DE3004443B4 /* LocationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMock.swift; sourceTree = "<group>"; };
+		B8905A7923907FFF004443B4 /* BaseSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSceneTests.swift; sourceTree = "<group>"; };
+		B8905A7C239080DC004443B4 /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		C29848055EC8EAEB70486657 /* Pods-Cognitev-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-Task.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task.debug.xcconfig"; sourceTree = "<group>"; };
+		E2BC7305B5199FBEAE5F88C0 /* Pods-Cognitev-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-Task.release.xcconfig"; path = "Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task.release.xcconfig"; sourceTree = "<group>"; };
+		F0A8A78DC414F8F29914DB0D /* libPods-Cognitev-TaskUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognitev-TaskUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7860E8B7F6E9690AC9DE4E8 /* Pods-Cognitev-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognitev-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Cognitev-TaskTests/Pods-Cognitev-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75A051BD45B9217657B105E /* Pods_Cognitev_Task.framework in Frameworks */,
+				31CD7E97313BF2C97E516E1B /* Pods_Cognitev_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87341C16C6121B98E50CDB0 /* libPods-Cognitev-TaskTests.a in Frameworks */,
+				B8397A3795BA0F15C6F75382 /* libPods-Cognitev-TaskTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,19 +138,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA24DD23F2E4464577F14BCC /* libPods-Cognitev-TaskUITests.a in Frameworks */,
+				3254330DB709305D72C31391 /* libPods-Cognitev-TaskUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C5821F32EF1AE75036D2B75 /* Frameworks */ = {
+		06ED071D9AE61FE73160667D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4F1ADC1CBDE34997634A490 /* Pods_Cognitev_Task.framework */,
-				8CCF99AC63C50D7843C6712D /* libPods-Cognitev-TaskTests.a */,
-				633EBF86A4F1C411C8E1AF5D /* libPods-Cognitev-TaskUITests.a */,
+				67AD985F0B78508AABB6E5BB /* Pods_Cognitev_Task.framework */,
+				681A93E07838C22598673A0E /* libPods-Cognitev-TaskTests.a */,
+				F0A8A78DC414F8F29914DB0D /* libPods-Cognitev-TaskUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,19 +158,30 @@
 		97313558BC6F14EAABAACE0E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4BAF9A8BE399D31F42FF763C /* Pods-Cognitev-Task.debug.xcconfig */,
-				2CD37EA07AB893A411AC40B1 /* Pods-Cognitev-Task.release.xcconfig */,
-				22A879CE7336289CE91E9A9E /* Pods-Cognitev-TaskTests.debug.xcconfig */,
-				784DBA39C3F3E929E4C825C9 /* Pods-Cognitev-TaskTests.release.xcconfig */,
-				D4D3857502C849167CF3EB92 /* Pods-Cognitev-TaskUITests.debug.xcconfig */,
-				28FF10DA589AFDAD13F5AE6C /* Pods-Cognitev-TaskUITests.release.xcconfig */,
+				C29848055EC8EAEB70486657 /* Pods-Cognitev-Task.debug.xcconfig */,
+				E2BC7305B5199FBEAE5F88C0 /* Pods-Cognitev-Task.release.xcconfig */,
+				F7860E8B7F6E9690AC9DE4E8 /* Pods-Cognitev-TaskTests.debug.xcconfig */,
+				9F2F47B1B8FE0FF7368AAC4C /* Pods-Cognitev-TaskTests.release.xcconfig */,
+				03FF6D45C52788432D903C4C /* Pods-Cognitev-TaskUITests.debug.xcconfig */,
+				8DE4601CC53D524D4B710B0B /* Pods-Cognitev-TaskUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8018887238F21320045619E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8018888238F21440045619E /* VenueTableViewCell.swift */,
+				B8018889238F21440045619E /* VenueTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B8071E40238E9D0F007559A8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B86BB339238F02DA002F3C5C /* Keys */,
+				B8071E82238EFB11007559A8 /* Base */,
 				B8071E59238EA5B4007559A8 /* Validator */,
 				B8071E50238E9F94007559A8 /* Networking */,
 				B8071E45238E9DD5007559A8 /* Helpers */,
@@ -150,6 +193,9 @@
 		B8071E41238E9D1B007559A8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B8904878238E889A0041F509 /* AppDelegate.swift */,
+				B890487E238E889A0041F509 /* Main.storyboard */,
+				B8071E62238EA6E1007559A8 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -187,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				B8071E57238EA532007559A8 /* UserDefaultsManager.swift */,
+				B86BB337238F013A002F3C5C /* KeychainManager.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -212,6 +259,7 @@
 			children = (
 				B8071E51238E9FA7007559A8 /* Reachability.swift */,
 				B8071E53238E9FD9007559A8 /* BaseService.swift */,
+				B86BB33C238F05AF002F3C5C /* RecommendationService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -229,9 +277,39 @@
 		B8071E62238EA6E1007559A8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B8018887238F21320045619E /* View */,
+				B86BB33E238F08E3002F3C5C /* Model */,
 				B8071E63238EA6F0007559A8 /* HomeViewController.swift */,
+				B8071E89238EFDB4007559A8 /* HomeViewModel.swift */,
+				B86BB341238F09D6002F3C5C /* HomeInteractor.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B8071E82238EFB11007559A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B8071E83238EFB1F007559A8 /* BaseViewController.swift */,
+				B8071E85238EFBF1007559A8 /* BaseViewModel.swift */,
+				B8071E87238EFC29007559A8 /* BaseInteractor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B86BB339238F02DA002F3C5C /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				B86BB33A238F02E3002F3C5C /* Keys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		B86BB33E238F08E3002F3C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B86BB33F238F08F0002F3C5C /* ExploreResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B890486C238E889A0041F509 = {
@@ -242,7 +320,7 @@
 				B8904899238E889C0041F509 /* Cognitev-TaskUITests */,
 				B8904876238E889A0041F509 /* Products */,
 				97313558BC6F14EAABAACE0E /* Pods */,
-				4C5821F32EF1AE75036D2B75 /* Frameworks */,
+				06ED071D9AE61FE73160667D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,9 +339,6 @@
 			children = (
 				B8071E41238E9D1B007559A8 /* Scenes */,
 				B8071E40238E9D0F007559A8 /* Shared */,
-				B8904878238E889A0041F509 /* AppDelegate.swift */,
-				B890487C238E889A0041F509 /* ViewController.swift */,
-				B890487E238E889A0041F509 /* Main.storyboard */,
 				B8904881238E889B0041F509 /* Assets.xcassets */,
 				B8904883238E889C0041F509 /* LaunchScreen.storyboard */,
 				B8904886238E889C0041F509 /* Info.plist */,
@@ -274,7 +349,8 @@
 		B890488E238E889C0041F509 /* Cognitev-TaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				B890488F238E889C0041F509 /* Cognitev_TaskTests.swift */,
+				B8905A7823907FE4004443B4 /* Scenes */,
+				B8905A6F23907D99004443B4 /* Mock */,
 				B8904891238E889C0041F509 /* Info.plist */,
 			);
 			path = "Cognitev-TaskTests";
@@ -289,6 +365,34 @@
 			path = "Cognitev-TaskUITests";
 			sourceTree = "<group>";
 		};
+		B8905A6F23907D99004443B4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B8905A7023907DC6004443B4 /* RouterMock.swift */,
+				B8905A7223907DCF004443B4 /* NetworkMock.swift */,
+				B8905A7423907DD7004443B4 /* CacheMock.swift */,
+				B8905A7623907DE3004443B4 /* LocationMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B8905A7823907FE4004443B4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B8905A7B239080D3004443B4 /* Home */,
+				B8905A7923907FFF004443B4 /* BaseSceneTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B8905A7B239080D3004443B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B8905A7C239080DC004443B4 /* HomeTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,11 +400,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B890489F238E889C0041F509 /* Build configuration list for PBXNativeTarget "Cognitev-Task" */;
 			buildPhases = (
-				BC2522491865C45CDAE92057 /* [CP] Check Pods Manifest.lock */,
+				9EDBA3E53A1754C4FA462EE2 /* [CP] Check Pods Manifest.lock */,
 				B8904871238E889A0041F509 /* Sources */,
 				B8904872238E889A0041F509 /* Frameworks */,
 				B8904873238E889A0041F509 /* Resources */,
-				17444E5546D24901F7CB6FC3 /* [CP] Embed Pods Frameworks */,
+				8330166A95753E347AB8FF04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,11 +419,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89048A2238E889C0041F509 /* Build configuration list for PBXNativeTarget "Cognitev-TaskTests" */;
 			buildPhases = (
-				72FD3E7FEBD84F5B7B9D992E /* [CP] Check Pods Manifest.lock */,
+				5E6A3F328CEFDF8DA8F94BC8 /* [CP] Check Pods Manifest.lock */,
 				B8904887238E889C0041F509 /* Sources */,
 				B8904888238E889C0041F509 /* Frameworks */,
 				B8904889238E889C0041F509 /* Resources */,
-				DCAF241A2A68CDED45BFBBB2 /* [CP] Copy Pods Resources */,
+				9F13E1A6B2569E55A2B97F29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,7 +439,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89048A5238E889C0041F509 /* Build configuration list for PBXNativeTarget "Cognitev-TaskUITests" */;
 			buildPhases = (
-				99662BE179E5B578A3157BED /* [CP] Check Pods Manifest.lock */,
+				1FB34F72C83CFB4CC592F8BF /* [CP] Check Pods Manifest.lock */,
 				B8904892238E889C0041F509 /* Sources */,
 				B8904893238E889C0041F509 /* Frameworks */,
 				B8904894238E889C0041F509 /* Resources */,
@@ -399,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8904885238E889C0041F509 /* LaunchScreen.storyboard in Resources */,
+				B801888B238F21440045619E /* VenueTableViewCell.xib in Resources */,
 				B8904882238E889C0041F509 /* Assets.xcassets in Resources */,
 				B8904880238E889A0041F509 /* Main.storyboard in Resources */,
 			);
@@ -421,46 +526,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17444E5546D24901F7CB6FC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72FD3E7FEBD84F5B7B9D992E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Cognitev-TaskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99662BE179E5B578A3157BED /* [CP] Check Pods Manifest.lock */ = {
+		1FB34F72C83CFB4CC592F8BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,7 +548,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC2522491865C45CDAE92057 /* [CP] Check Pods Manifest.lock */ = {
+		5E6A3F328CEFDF8DA8F94BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognitev-TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8330166A95753E347AB8FF04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognitev-Task/Pods-Cognitev-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EDBA3E53A1754C4FA462EE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,7 +609,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCAF241A2A68CDED45BFBBB2 /* [CP] Copy Pods Resources */ = {
+		9F13E1A6B2569E55A2B97F29 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,20 +633,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86BB340238F08F0002F3C5C /* ExploreResponse.swift in Sources */,
+				B8071E8A238EFDB4007559A8 /* HomeViewModel.swift in Sources */,
 				B8071E54238E9FD9007559A8 /* BaseService.swift in Sources */,
+				B86BB342238F09D6002F3C5C /* HomeInteractor.swift in Sources */,
 				B8071E5D238EA5E8007559A8 /* ReachabilityValidator.swift in Sources */,
+				B8071E86238EFBF1007559A8 /* BaseViewModel.swift in Sources */,
+				B86BB33D238F05AF002F3C5C /* RecommendationService.swift in Sources */,
+				B86BB33B238F02E3002F3C5C /* Keys.swift in Sources */,
 				B8071E52238E9FA7007559A8 /* Reachability.swift in Sources */,
 				B8071E47238E9DF2007559A8 /* Storyboard.swift in Sources */,
-				B890487D238E889A0041F509 /* ViewController.swift in Sources */,
+				B8071E64238EA6F0007559A8 /* HomeViewController.swift in Sources */,
 				B8071E56238EA0B5007559A8 /* AppleLocationManager.swift in Sources */,
 				B8071E5B238EA5CE007559A8 /* BaseValidator.swift in Sources */,
 				B8071E4D238E9E83007559A8 /* Router.swift in Sources */,
 				B8071E61238EA652007559A8 /* Codable+Helpers.swift in Sources */,
+				B8071E88238EFC29007559A8 /* BaseInteractor.swift in Sources */,
 				B8071E58238EA532007559A8 /* UserDefaultsManager.swift in Sources */,
+				B801888A238F21440045619E /* VenueTableViewCell.swift in Sources */,
 				B8071E44238E9DB0007559A8 /* ExternalProtocols.swift in Sources */,
 				B8071E5F238EA614007559A8 /* ValidatorError.swift in Sources */,
+				B8071E84238EFB1F007559A8 /* BaseViewController.swift in Sources */,
 				B8904879238E889A0041F509 /* AppDelegate.swift in Sources */,
 				B8071E4F238E9EDA007559A8 /* MoyaManager.swift in Sources */,
+				B86BB338238F013B002F3C5C /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +664,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8904890238E889C0041F509 /* Cognitev_TaskTests.swift in Sources */,
+				B8905A7723907DE3004443B4 /* LocationMock.swift in Sources */,
+				B8905A7523907DD7004443B4 /* CacheMock.swift in Sources */,
+				B8905A7A23907FFF004443B4 /* BaseSceneTests.swift in Sources */,
+				B8905A7123907DC6004443B4 /* RouterMock.swift in Sources */,
+				B8905A7D239080DC004443B4 /* HomeTests.swift in Sources */,
+				B8905A7323907DCF004443B4 /* NetworkMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +749,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -651,6 +772,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -689,6 +811,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -704,6 +827,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -712,7 +836,7 @@
 		};
 		B89048A0238E889C0041F509 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BAF9A8BE399D31F42FF763C /* Pods-Cognitev-Task.debug.xcconfig */;
+			baseConfigurationReference = C29848055EC8EAEB70486657 /* Pods-Cognitev-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,7 +855,7 @@
 		};
 		B89048A1238E889C0041F509 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CD37EA07AB893A411AC40B1 /* Pods-Cognitev-Task.release.xcconfig */;
+			baseConfigurationReference = E2BC7305B5199FBEAE5F88C0 /* Pods-Cognitev-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,7 +874,7 @@
 		};
 		B89048A3238E889C0041F509 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A879CE7336289CE91E9A9E /* Pods-Cognitev-TaskTests.debug.xcconfig */;
+			baseConfigurationReference = F7860E8B7F6E9690AC9DE4E8 /* Pods-Cognitev-TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -765,6 +889,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ahmed-Ramy.Cognitev-TaskTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognitev-Task.app/Cognitev-Task";
@@ -773,7 +898,7 @@
 		};
 		B89048A4238E889C0041F509 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 784DBA39C3F3E929E4C825C9 /* Pods-Cognitev-TaskTests.release.xcconfig */;
+			baseConfigurationReference = 9F2F47B1B8FE0FF7368AAC4C /* Pods-Cognitev-TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -788,6 +913,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Ahmed-Ramy.Cognitev-TaskTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognitev-Task.app/Cognitev-Task";
@@ -796,7 +922,7 @@
 		};
 		B89048A6238E889C0041F509 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D3857502C849167CF3EB92 /* Pods-Cognitev-TaskUITests.debug.xcconfig */;
+			baseConfigurationReference = 03FF6D45C52788432D903C4C /* Pods-Cognitev-TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -817,7 +943,7 @@
 		};
 		B89048A7238E889C0041F509 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28FF10DA589AFDAD13F5AE6C /* Pods-Cognitev-TaskUITests.release.xcconfig */;
+			baseConfigurationReference = 8DE4601CC53D524D4B710B0B /* Pods-Cognitev-TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

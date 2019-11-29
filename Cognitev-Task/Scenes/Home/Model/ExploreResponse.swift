@@ -10,14 +10,16 @@ import Foundation
 
 // MARK: - ExploreResponse
 struct ExploreResponse: Codable {
-    let meta: Meta?
-    let response: Response?
+    var meta: Meta?
+    var response: Response?
+    
+    init() { }
 }
 
 // MARK: - Meta
 struct Meta: Codable {
-    let code: Int?
-    let requestID: String?
+    var code: Int?
+    var requestID: String?
 
     enum CodingKeys: String, CodingKey {
         case code
@@ -27,27 +29,33 @@ struct Meta: Codable {
 
 // MARK: - Response
 struct Response: Codable {
-    let suggestedFilters: SuggestedFilters?
-    let suggestedRadius: Int?
-    let headerLocation, headerFullLocation, headerLocationGranularity, query: String?
-    let totalResults: Int?
-    let suggestedBounds: SuggestedBounds?
-    let groups: [Group]?
+    var suggestedFilters: SuggestedFilters?
+    var suggestedRadius: Int?
+    var headerLocation, headerFullLocation, headerLocationGranularity, query: String?
+    var totalResults: Int?
+    var suggestedBounds: SuggestedBounds?
+    var groups: [Group]?
+    
+    init() { }
 }
 
 // MARK: - Group
 struct Group: Codable {
-    let type, name: String?
-    let items: [GroupItem]?
+    var type, name: String?
+    var items: [GroupItem]?
+    
+    init() { }
 }
 
 // MARK: - GroupItem
 struct GroupItem: Codable {
-    let reasons: Reasons?
-    let venue: Venue?
-    let referralID: String?
-    let flags: Flags?
-
+    var reasons: Reasons?
+    var venue: Venue?
+    var referralID: String?
+    var flags: Flags?
+    
+    init() { }
+    
     enum CodingKeys: String, CodingKey {
         case reasons, venue
         case referralID = "referralId"
@@ -75,10 +83,12 @@ struct ReasonsItem: Codable {
 
 // MARK: - Venue
 struct Venue: Codable {
-    let id, name: String?
-    let location: Location?
-    let categories: [Category]?
-    let photos: Photos?
+    var id, name: String?
+    var location: Location?
+    var categories: [Category]?
+    var photos: Photos?
+    
+    init() { }
 }
 
 // MARK: - Category

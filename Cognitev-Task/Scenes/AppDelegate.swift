@@ -13,14 +13,15 @@ import AlamofireNetworkActivityLogger
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        NetworkActivityLogger.shared.startLogging()
-        NetworkActivityLogger.shared.level = .debug
-        
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        self.window = window
-        let vc = AppStoryboard.Main.initialViewController()
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+        let appIsInTestMode = CommandLine.arguments.count <= 1
+        if appIsInTestMode {
+            NetworkActivityLogger.shared.startLogging()
+            NetworkActivityLogger.shared.level = .debug
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let vc = AppStoryboard.Main.initialViewController()
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
 }

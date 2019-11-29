@@ -30,6 +30,7 @@ final class HomeViewModel: BaseViewModel {
         }
     }
     
+    /// fetches venues from remote dataSource
     fileprivate func fetchVenuesRemotely(_ location: CLLocation) {
         HomeFeedInteractor(page: self.page,
                        coordinates: (long: location.coordinate.longitude,

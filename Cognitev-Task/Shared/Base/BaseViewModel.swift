@@ -20,8 +20,4 @@ class BaseViewModel {
         self.router = router
         self.network = network
     }
-    
-    func handleError(error: Error) {
-        router.alert(title: "Error", message: error.localizedDescription, actions: [(title: "Ok", style: .default)])
-    }
 }

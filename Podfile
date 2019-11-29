@@ -3,7 +3,7 @@ platform :ios, '9.3'
 
 def general_pods
   pod 'SwifterSwift', '~> 4.6.0'
-  pod 'Moya/RxSwift', '~> 12.0.1'
+  pod 'Moya'
   pod 'RxSwift', '~> 4.5.0'
   pod 'RxCocoa', '~> 4.5.0'
 end
@@ -14,9 +14,16 @@ def ui_alerts_pods
   pod 'PKHUD', '~> 5.3.0'
 end
 
+def utilities_pods
+  pod 'SwiftLocation'
+  pod 'SwiftKeychainWrapper'
+  pod 'AlamofireNetworkActivityLogger'
+end
+
 def all_pods
   general_pods
   ui_alerts_pods
+  utilities_pods
 end 
 
 target 'Cognitev-Task' do

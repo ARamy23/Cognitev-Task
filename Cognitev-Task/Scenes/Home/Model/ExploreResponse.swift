@@ -48,7 +48,7 @@ struct Group: Codable {
 }
 
 // MARK: - GroupItem
-struct GroupItem: Codable {
+struct GroupItem: Codable, Equatable {
     var reasons: Reasons?
     var venue: Venue?
     var referralID: String?
@@ -60,6 +60,10 @@ struct GroupItem: Codable {
         case reasons, venue
         case referralID = "referralId"
         case flags
+    }
+    
+    static func == (lhs: GroupItem, rhs: GroupItem) -> Bool {
+        return lhs.referralID == rhs.referralID
     }
 }
 
